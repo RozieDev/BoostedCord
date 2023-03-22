@@ -1,5 +1,5 @@
 # BoostedCord
-![boostedcordexample](https://github.com/RozieDev/BoostedCord/blob/main/Addons/this.png)
+![boostedcordexample](https://github.com/RozieDev/BoostedCord/blob/main/Addons/this2.png)
 
 # Installation 
 How do I download this theme:
