@@ -1,0 +1,138 @@
+/****GOOGLE/BD FONTS****/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+/****ADDONS****/
+@import url("https://roziedev.github.io/BoostedCord/Addons/ModalEdited.css");
+
+/*welcome text*/
+.theme-dark body:before {
+  content: "Greetings " var(--user-name) "!";
+  z-index: 1000000000000000000000000;
+  color: #fff;
+  background-color: transparent;
+  top: 0px;
+  left: 52%;
+  position: absolute;
+  padding: 5px 15px;
+  transform: translate(-60%, -100%);
+  animation: chl 3s ease;
+  animation-delay: 4s;
+}
+body,
+span:not(.spinner-item) {
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+}
+@-webkit-keyframes chl {
+  from {
+    transform: translate(-60%, -100%);
+  }
+  20% {
+    transform: translate(-60%, 20%);
+  }
+  80% {
+    transform: translate(-60%, 20%);
+  }
+  to {
+    transform: translate(-60%, -100%);
+  }
+}
+@keyframes chl {
+  from {
+    transform: translate(-60%, -100%);
+  }
+  20% {
+    transform: translate(-60%, 20%);
+  }
+  80% {
+    transform: translate(-60%, 20%);
+  }
+  to {
+    transform: translate(-60%, -100%);
+  }
+}
+
+/*discord wordmark*/
+.wordmark-2u86JB path {
+  display: none !important;
+}
+.theme-dark .wordmark-2u86JB::before {
+  content: "BoostedCord";
+  font-size: 16px;
+  font-family: "Poppins" !important;
+  position: fixed;
+  color: rgb(244, 127, 255);
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  border-radius: 5px;
+  padding: 0px 10px 0px 0px;
+  pointer-events: all;
+  transition: 0.5s ease-in-out;
+}
+.wordmark-2u86JB:hover:before {
+  content: "BoostedCord";
+  color: rgb(244, 127, 255);
+}
+
+/*user popout animation*/
+.theme-dark #app-mount [class*="userPopout"][aria-modal="true"] {
+  overflow: hidden;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease forwards;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/*custom popout window*/
+.theme-dark #app-mount .layers-OrUESM {
+  margin: var(--window-margin);
+  overflow: hidden;
+  border-radius: var(--window-border-radius);
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur)) !important;
+}
+/*user setting icon spin*/
+.button-12Fmur:nth-last-child(1):hover
+  path[d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"] {
+  animation: Settings 1s;
+  transform-origin: center;
+}
+.button-12Fmur:nth-last-child(1)
+  path[d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18 20L16.565 18.564C15.797 19.099 14.932 19.498 14 19.738V22H10V19.738C9.069 19.498 8.203 19.099 7.436 18.564L6 20L4 18L5.436 16.564C4.901 15.799 4.502 14.932 4.262 14H2V10H4.262C4.502 9.068 4.9 8.202 5.436 7.436L4 6L6 4L7.436 5.436C8.202 4.9 9.068 4.502 10 4.262V2H14V4.261C14.932 4.502 15.797 4.9 16.565 5.435L18 3.999L20 5.999L18.564 7.436C19.099 8.202 19.498 9.069 19.738 10ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"] {
+  animation: Settings2 1s;
+  transform-origin: center;
+}
+@keyframes Settings {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes Settings2 {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Settings/Deafen/Mute Buttons Animated */
+.button-12Fmur:hover .contents-3ca1mk {
+  animation: UserModalButtons 0.5s normal ease;
+}
+
+@keyframes UserModalButtons {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
