@@ -1,0 +1,280 @@
+/**
+ * @name BoostedCord
+ * @author rozie#0245
+ * @description A theme for people that really want to see more of the pink booster color in effect.
+ * @version 0.0.1
+ * @source https://github.com/RozieDev/BoostedCord
+ * @website https://rozie.me/
+ */
+
+/* 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                    License:                   #
+#                    Attribution                #
+#                    CC BY                      #
+# "This license lets others distribute, remix,  #
+# adapt, and build upon your work, even         #
+# commercially, as long as they credit you for  #
+# the original creation."                       #
+#                                               #
+# What this means for you is that if you decide #
+# to create your own version of this theme,     # 
+# provide some credit somewhere to me.          #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+*/
+
+/*boostedcord*/
+@import url("https://roziedev.github.io/BoostedCord/boostedcord.css");
+
+/*removable addons*/
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
+@import url("https://nyri4.github.io/Discolored/main.css");
+
+:root {
+  /* Palette */
+  --pink: rgb(244, 127, 255);
+  --pinktintlighter: rgb(250, 203, 255);
+  --pinktintdarker: rgb(248, 178, 255);
+  --pinktintdarkerdarker: rgb(49, 35, 50);
+  --mauve: rgb(198, 160, 246);
+  --leipink: rgb(151, 76, 158);
+
+  --gray0: rgb(109, 108, 117);
+  --gray1: rgb(143, 134, 150);
+  --gray2: rgb(186, 172, 191);
+
+  --black0: rgb(24, 25, 38);
+  --black1: rgb(30, 32, 48);
+  --black2: rgb(36, 39, 58);
+  --black3: rgb(54, 58, 79);
+  --black4: rgb(91, 96, 120);
+}
+
+:root {
+  /* Window Properties */
+  /* --window-margin: 7px; */
+  /* --window-box-shadow: 0px 0px 15px 5px rgb(244, 127, 255);
+    --window-blur: 5px;
+    --window-border-radius: 30px; */
+  --sidebar-colour: rgb(36, 36, 36);
+
+  --avatar-area-box-shadow: 0px 0px 25px 7px rgb(244, 127, 255);
+  --avatar-area-background-colour: var(--black0);
+  --avatar-area-top-right-radius: 20px;
+
+  --server-selector-gradient-top: var(--black1);
+  --server-selector-gradient-bottom: var(--avatar-area-background-colour);
+
+  /* Put any name you want in between the "" */
+  --user-name: "King";
+  --font-name: Poppins;
+  --font-size: 13px;
+}
+
+.theme-dark {
+  --header-primary: var(--pink) !important;
+  --header-secondary: var(--pinktintdarker) !important;
+  --background-primary: var(--black2) !important;
+  --background-primary-alt: var(--black2) !important;
+  --background-mobile-primary: var(--black2) !important;
+  --background-secondary: var(--black1) !important;
+  --background-secondary-alt: var(--black1) !important;
+  --background-mobile-secondary: var(--black1) !important;
+  --background-tertiary: var(--black0) !important;
+  --background-floating: var(--pinktintdarkerdarker) !important;
+  --background-mentioned: transparent !important;
+  --background-mentioned-hover: transparent !important;
+  --background-accent: var(--gray0) !important;
+  --background-modifier-selected: var(--pink) !important;
+  --background-modifier-accent: var(--black2) !important;
+  --background-modifier-hover: var(--leipink) !important;
+  --text-normal: var(--pinktintlighter) !important;
+  --text-muted: var(--pinktintlighter) !important;
+  --text-link: var(--pinktintdarker) !important;
+  --channels-default: var(--pinktintdarker) !important;
+  --channeltextarea-background: var(--black3) !important;
+  --activity-card-background: var(--) !important;
+  --interactive-normal: var(--pinktintlighter) !important;
+  --interactive-muted: var(--pink) !important;
+  --interactive-hover: var(--pink) !important;
+  --interactive-active: var(--pinktintdarker) !important;
+  --scrollbar-thin-thumb: var(--black0) !important;
+  --scrollbar-thin-track: transparent !important;
+  --scrollbar-auto-thumb: var(--pink) !important;
+  --scrollbar-auto-track: var(--black0) !important;
+  --scrollbar-auto-scrollbar-color-thumb: var(--black3) !important;
+  --scrollbar-auto-scrollbar-color-track: var(--black3) !important;
+  --deprecated-store-bg: var(--black0) !important;
+}
+
+/* Mentions */
+.mentioned-Tre-dv .mention.interactive {
+  color: var(--pink) !important;
+}
+
+.mentioned-Tre-dv::before {
+  background-color: var(--pink) !important;
+}
+
+/* Home */
+.container-2cd8Mz {
+  background-color: var(--black2) !important;
+}
+
+/* Autocomplete popup */
+.autocomplete-3NRXG8 {
+  background-color: var(--black2) !important;
+}
+
+.wrapper-1NNaWG.categoryHeader-OpJ1Ly {
+  background-color: var(--black2) !important;
+}
+
+.autocomplete-3NRXG8 {
+  background-color: var(--black2) !important;
+}
+
+/* Autocomplete popup selection */
+.selected-3H3-RC {
+  background-color: var(--black3) !important;
+}
+
+/* Search: Items */
+.container-2McqkF {
+  background-color: var(--black0) !important;
+}
+
+.searchOption-351dTI:hover {
+  background-color: var(--black3) !important;
+}
+
+/* Search: No shadows */
+.option-ayUoaq:after {
+  background: none !important;
+}
+
+/* Search: in-section */
+.queryContainer-ZunrLZ {
+  background-color: var(--black0) !important;
+}
+
+/* Search: History */
+.option-ayUoaq:hover {
+  background-color: var(--black3) !important;
+}
+
+/* New Message Bar */
+.newMessagesBar-1hF-9G:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--pink) !important;
+  border-radius: 0 0 3px 3px;
+}
+
+/* New Messages Flag */
+.isUnread-3Lojb- {
+  border-color: var(--pink) !important;
+}
+
+.unreadPill-3nEWYM {
+  background-color: var(--pink) !important;
+}
+
+.unreadPillCapStroke-1nE1Q8 {
+  fill: var(--pink) !important;
+  color: var(--pink) !important;
+}
+
+.isUnread-3Lojb- .content-3spvdd {
+  color: var(--pink) !important;
+}
+
+/* Server Modals */
+.root-g14mjS,
+.separator-2lLxgC {
+  background-color: var(--black2) !important;
+}
+
+.footer-31IekZ {
+  background-color: var(--black1) !important;
+}
+
+/* Boost Page */
+.perksModal-CLcR1c {
+  background-color: var(--pink) !important;
+}
+
+.tierMarkerBackground-G8FoN4 {
+  background-color: var(--pinktintlighter) !important;
+}
+
+/* Emoji Popout */
+.popoutContainer-2wbmiM {
+  background-color: var(--black1) !important;
+}
+
+/* Presence Buttons */
+.lookFilled-yCfaCM.colorGrey-2iAG-B,
+.lookFilled-yCfaCM.colorPrimary-2AuQVo {
+  background-color: var(--pink) !important;
+}
+
+/* Primary Card */
+.cardPrimary-3qRT__ {
+  background-color: var(--pink) !important;
+}
+
+/* Payment Page Boxes */
+.paymentPane-ut5qKZ,
+.paginator-1eqD2g,
+.payment-2bOh4k,
+.codeRedemptionRedirect-3SBiCp {
+  background-color: var(--black1) !important;
+}
+
+.bottomDivider-ZmTm-j {
+  border-bottom-color: var(--pink) !important;
+}
+
+/* Selection */
+::selection {
+  color: var(--white) !important;
+  background: var(--black4) !important;
+}
+
+/* avatar area  */
+.panels-3wFtMD {
+  background-color: var(--avatar-area-background-colour);
+  border-top-right-radius: var(--avatar-area-top-right-radius);
+  box-shadow: var(--avatar-area-box-shadow);
+  clip-path: polygon(100% -400%, 100% 100%, 0% 400%, 0% -400%);
+}
+
+/*Internal window properties (You can alter this code to your liking)*/
+/* .layers-OrUESM {
+    margin: var(--window-margin);
+    box-shadow: var(--window-box-shadow);
+    overflow: hidden;
+    border-radius: var(--window-border-radius);
+    background: var(--window-colour);
+} */
+
+/* Server selector */
+.scroller-3X7KbA {
+  background-image: linear-gradient(
+    var(--server-selector-gradient-top),
+    var(--server-selector-gradient-bottom)
+  );
+}
+
+/* Keyboard shortcut menu */
+.keyboardShortcutsModal-2CRmCm {
+  background-color: var(--background-primary) !important;
+}
